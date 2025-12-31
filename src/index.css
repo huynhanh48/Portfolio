@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@layer theme{
+  body{
+    @apply  bg-black
+  }
+}
+@theme{
+  --color-primary:#1A0B2E;
+  --color-second:#7127BA;
+  --font-primary:Preahvihear ,"sans-serif";
+  --animate-border-animate: border-animate 3s linear infinite;
+}
+@property  --border-angle{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@layer utilities  {
+  .flex-center{
+    @apply  flex  justify-center items-center
+  }
+}
+@keyframes border-animate{
+  to {
+    --border-angle: 360deg;
+  }
+}
